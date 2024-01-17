@@ -12,7 +12,7 @@ body {
 .container {
   width: 82%;
   margin: 100px auto;
-  /* background-color: aqua; */
+
   border-radius: 15px;
   padding: 30px 40px;
 }
@@ -130,7 +130,104 @@ body {
 .btn:hover {
   background-color: black;
 }
+/*main section styles*/
+.second {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
 
+.firstHalf {
+  flex: 1;
+}
+
+.secondHalf {
+  flex: 1;
+}
+
+.firstHalf {
+  text-align: left;
+  color: rgba(19, 19, 24, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.firstHalf h2 {
+  color: #131318;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.firstHalf p {
+  margin: 20px 0;
+}
+
+.firstHalf ul {
+  margin-left: 40px;
+}
+
+.firstHalf .btn {
+  width: 200px;
+}
+
+.secondHalf img {
+  width: 100%;
+}
+
+.third {
+  text-align: center;
+}
+
+.third h2 {
+  color: #131318;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.third > p {
+  color: rgba(19, 19, 24, 0.7);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.imgRow {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.third .imgRow:last-child {
+  margin-bottom: 0;
+}
+
+.imgRow > .img {
+  position: relative;
+  border-radius: 15px;
+}
+
+.imgRow .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.imgRow .img p {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 800;
+  bottom: 45%;
+  opacity: 1;
+}
 
 
 
@@ -177,4 +274,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .second {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .imgRow {
+    flex-direction: column;
+  }
+
+  .imgRow img {
+    max-height: 220px;
+  }
 }
+

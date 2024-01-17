@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+/*nav styles*/
+
+.container {
+  width: 82%;
+  margin: 100px auto;
+  /* background-color: aqua; */
+  border-radius: 15px;
+  padding: 30px 40px;
+}
+
+.navContainer {
+  margin: 10px auto;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.navContainer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.barBtn {
+  display: none;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  height: 37px;
+  margin-right: -5px;
+}
+.company p {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 30px;
+  font-weight: 800;
+}
+.company span {
+  color: #ff5400;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #424247;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*banner styles*/
+.first {
+  background: linear-gradient(
+      180deg,rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url("./Images/Group 13.png") 100%;
+  color: #fff;
+  padding: 100px 15%;
+  background-size: 100% 100%;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.first h2 {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.first > p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  margin: 40px 0;
+}
+
+.firstForm form {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.firstForm input,
+.firstForm select,
+.firstForm option,
+.firstForm .btn {
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  color: #424247;
+}
+
+.firstForm select {
+  border-right: 10px solid transparent;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #ff5400;
+  color: white !important;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+  .company p {
+    font-size: 20px;
+  }
+  .logo {
+    max-width: 40px;
+    margin-right: -8px;
+  }
+  .container {
+    width: 90%;
+    padding: 10px 30px;
+    margin: 30px auto;
+  }
+  .navContainer {
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .barBtn {
+    display: block;
+  }
+  .navLinks {
+    display: none;
+  }
+
+  .first {
+    padding: 50px 30px;
+  }
+  .first h2 {
+    font-size: 32px;
+  }
+
+  .first p {
+    margin: 30px auto;
+  }
+  .firstForm form {
+    display: flex;
+    flex-direction: column;
+  }
+}
